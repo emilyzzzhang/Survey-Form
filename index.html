@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out the form below to help me improve as a friend.</p>
+
+    <form id="survey-form">
+        <label id="name-label" for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label id="email-label" for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label id="number-label" for="number">Age:</label>
+        <input type="number" id="number" name="age" placeholder="Enter your age" min="10" max="100" required>
+
+        <label for="dropdown">Which would best describe me?</label>
+        <select id="dropdown" name="options">
+            <option value="option1">(Select one)</option>
+            <option value="option2">DramaQueen</option>
+            <option value="option3">Grosse Stresseuse</option>
+            <option value="option4">Cutest cutie</option>
+        </select>
+
+        <p class="interests-label">What would you want to see improve?</p>
+        <div class="checkbox-container">
+            <div>
+                <input type="checkbox" id="checkbox1" name="interest" value="interest1">
+                <label for="checkbox1">Height</label>
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox2" name="interest" value="interest2">
+                <label for="checkbox2">Humour</label>
+            </div>
+            <div>
+                <input type="checkbox" id="checkbox3" name="interest" value="interest3">
+                <label for="checkbox3">Discipline</label>
+            </div>
+        </div>
+
+        <label for="comments">Additional comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+
+        <input type="submit" id="submit" value="Submit">
+    </form>
+</body>
+</html>
